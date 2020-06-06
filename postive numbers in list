@@ -1,8 +1,9 @@
-list1=[]
-n=int(input("enter number of elements"))
-for i in range(0,n):
- element=int(input())
- list1.append(element)
+list1=[12,-7,5,64,-14]
 print(list1)
 lst=[ele for ele in list1 if ele>0]
 print(lst)
+_________________
+list2=[12,14,-95,3]
+print(list2)
+list=[element for ele in list2 if element>0]
+print(list)
