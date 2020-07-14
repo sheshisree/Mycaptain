@@ -2,19 +2,22 @@
 
 <html>
     <head>
+        
     <style>
      body {font-family: Arial, Helvetica, sans-serif;}
     input[type="text"],input[type="email"]{
         width:40%;
         padding:8px 8px;
         margin:10px 0 ;
-       
+        border-radius: 30px;
+       font-size:medium;
     }
     button{
         background-color:blue;
         color:white;
         padding: 10px 30px;
         margin:8px 0;
+        border-radius: 50px;
     }
     h2{
         text-align: center;
@@ -22,11 +25,17 @@
     }
     .container{
         background-color: rgb(228, 176, 192);
-        padding:150px;
+     padding-left: 40px;
+     padding-top:0px ;
+     padding-bottom:140px;
     }
     .footer{
-        text-align:center ;
-        background-color: rgb(35, 100, 223);
+        
+        background-color: rgb(84, 136, 231);
+text-align: center;
+    }
+    .e{
+        text-align:center;
     }
     .a{
         text-align:center;
@@ -40,36 +49,49 @@
     .d{
         text-align:center;
     }
-    .e{
-        text-align:center;
-    }
+    
     h3{
         text-align: start;
+    }
+    ul#menu li{
+        display:table-header-group ;
     }
 
     </style>
         
+        <script src="front end.js"></script>  
+
+
     </head>
     <body>
         
         <div class="container">
+            <image src="https://icons.iconarchive.com/icons/uiconstock/dynamic-flat-android/72/cart-icon.png" text-align="center" ></image>
             <div class="header" type="text" draggable="true"> <h2>Hey people want to shop!!</h2> </div>
         <div class="a">
         <label for= "uname"><b>Enter full name</b></label><br/></div>
         <div class="b">
-        <input type="text" placeholder="full name" name="uname" required><br/>
-        <br /></div>
+        <input type="text" placeholder="full name" name="uname" id="fullname"  required  /><br/>
+        <br />
+    
+    </div>
 <div class="c">
             <label for="eml" ><b>enter mail id</b></label><br/></div>
             <div class="d">
-        <input type="email" placeholder="email" name="eml" required><br/>
+        <input type="email" placeholder="email" name="eml"  id="mail" required  /><br/>
 <br /></div>
-<div class="e"> <button type="submit">-></button></div>
+<div class="e"> <button  onclick="validate()"    type="submit" >submit</button></div>
        
     </div>
     
     <div class="footer" type="text">
         contact us 993670172 <br/>  abcd@gmail.com
+        <ul id=" menu">
+            <li><a href=" about.html"> about us</a>
+            </li>
+            <li><a href="contact us"> know more</a></li>
+            <li>explore</li>
+        </ul>
     </div>
     </body>
 </html>
